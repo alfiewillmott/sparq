@@ -1,0 +1,17 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/book"
+  to = "/Book%20a%20Call.dc.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/Enquire.dc.html"
+  status = 200
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
